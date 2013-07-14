@@ -33,6 +33,8 @@ public class Image implements Serializable {
 	private Map<String, String> metadata;
 		
 	private List<Link> links;
+	
+	private Server server;
 
 	/**
 	 * @return the id
@@ -179,6 +181,14 @@ public class Image implements Serializable {
 	 */
 	public void setLinks(List<Link> links) {
 		this.links = links;
+	}
+	
+	public Server getServer() {
+		return server;
+	}
+
+	public void setServer(Server server) {
+		this.server = server;
 	}
 
 	/* (non-Javadoc)
